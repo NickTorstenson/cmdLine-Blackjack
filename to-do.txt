@@ -1,0 +1,89 @@
+SOLUTION TO MULTI CARD PRINTING PROBLEM
+
+-___--___-
+
+
+|XX-||X--|
+
+
+|-*-||-*-|
+
+
+|_XX||__X|
+
+
+cardTE(1) + cardTE(2) + cardTE(...)
+
+cardTL(1) + cardTL(2) + cardTL(...)
+
+cardML(1) + cardML(2) + cardML(...)
+
+cardBL(1) + cardBL(2) + cardBL(...)
+
+
+
+ON THE DOCKET
+
+DONE - Change the player hand variables to a list(tuple maybe???) with 2 values to better access the data without having
+2 different variables which need to be individually specified
+
+- When there are more than 2 aces in the hand things get funky
+
+- Game Loop generally
+
+- Build main game UI
+    Ex:
+
+         ___  ___
+        |░░░||2  |
+        |▒▒▒|| ♦ |
+        |▓▓▓||__2|
+         Dealer
+         ___  ___  
+        |10 ||Q  | 
+        | ♣ || ♣ |  
+        |_10||__Q| 
+         Main Hand   
+
+         1) Hit
+         2) Stand
+         3) Double Down
+         4) Split
+
+
+        USER DECIDES TO SPLIT
+
+
+         ___  ___
+        |░░░||2  |
+        |▒▒▒|| ♦ |
+        |▓▓▓||__2|
+         Dealer
+         ___  ___    ___  ___
+        |10 ||K  |  |Q  ||10 |
+        | ♣ || ♣ |  | ♦ || ♣ |
+        |_10||__K|  |__Q||_10|
+         Main Hand   --------   
+
+         1) Hit
+         2) Stand
+         3) Double Down
+
+
+         USER STANDS
+
+
+         ___  ___
+        |░░░||2  |
+        |▒▒▒|| ♦ |
+        |▓▓▓||__2|
+         Dealer
+         ___  ___    ___  ___
+        |10 ||K  |  |Q  ||10 |
+        | ♣ || ♣ |  | ♦ || ♣ |
+        |_10||__K|  |__Q||_10|
+         --------    Split Hand    
+
+                     1) Hit
+                     2) Stand
+                     3) Double Down
